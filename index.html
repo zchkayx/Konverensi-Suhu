@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Konversi Suhu</h1>
+            <p>Masukkan suhu derajat Celsius (°C) atau Fahrenheit (°F) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F) atau Celsius (°C).</p>
+            <form id="tempForm">
+                <label for="celsius">Celsius (°C):</label>
+                <textarea id="celsius" name="celsius" rows="2"></textarea>
+                <div class="button-group">
+                    <button type="button" id="convertButton">Konversi</button>
+                    <button type="button" id="resetButton">Reset</button>
+                    <button type="button" id="reverseButton">Reverse</button>
+                    
+                </div>
+                <label for="fahrenheit">Fahrenheit (°F):</label>
+                <textarea id="fahrenheit" name="fahrenheit" rows="2" readonly></textarea>
+                <label for="calculation">Cara Kalkulasi:</label>
+                <textarea id="calculation" name="calculation" rows="4" readonly></textarea>
+            </form>
+            <a href="#" id="reverseLink">Konversi Dari Fahrenheit (°F) ke Celsius (°C)</a>
+        </div>
+        <div class="right">
+            <h2>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h2>
+            <p>Suhu <i>S</i> dalam derajat Fahrenheit (°F) sama dengan suhu <i>S</i> dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
+            <p><i>S</i>(°F) = (<i>S</i>(°C) * 9/5) + 32</p>
+            <p>atau</p>
+            <p><i>S</i>(°F) = (<i>S</i>(°C) * 1.8) + 32</p>
+            <h2>Cara Konversi Dari Fahrenheit (°F) ke Celsius (°C)</h2>
+            <p>Suhu <i>S</i> dalam derajat Celsius (°C) sama dengan suhu <i>S</i> dalam derajat Fahrenheit (°F) kurangi 32 kali 5/9 .</p>
+            <p><i>S</i>(°C) = (<i>S</i>(°F) - 32) * 5/9</p>
+            <p>atau</p>
+            <p><i>S</i>(°C) = (<i>S</i>(°F) - 32) * 0.5556</p>
+            
+
+            <div class="social-links">
+                <span class="social-text">halo zchkayx di sini...</span>
+                <a href="https://www.linkedin.com/in/elza-kayla-muthiah-001615259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                    <img src="https://logospng.org/download/linkedin/logo-linkedin-icon-1536.png" alt="linkedin">
+                </a>
+                <a href="https://www.instagram.com/sheiskayla__?igsh=dnp5NW90bTUzeDFu" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_1280.jpg" alt="Instagram">
+                </a>
+                <a href="https://github.com/zchkayx" target="_blank" rel="noopener noreferrer">
+                    <img src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github">
+                </a>
+                
+            </div>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

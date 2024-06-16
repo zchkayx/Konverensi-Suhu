@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Menggunakan font Montserrat */
+    overflow-x: hidden; /* Menghindari overflow horizontal yang tidak diinginkan */
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0; /* Pastikan margin diatur ulang untuk menghindari efek tak terduga */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #007bff;
+    overflow: auto; /* Jika konten di dalam .container melebihi ukuran maksimum, scrollbar akan muncul */
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 45px; /* Memperbesar ukuran font h1 */
+    margin-bottom: 20px;
+    color: #007bff;
+    text-transform: uppercase; /* Mengubah teks h1 menjadi huruf besar */
+    letter-spacing: 2px; /* Menambahkan jarak antar huruf pada h1 */
+    font-weight: bold; /* Menambahkan ketebalan pada h1 */
+}
+
+h2 {
+    font-size: 24px; /* Memperbesar ukuran font h2 */
+    margin-top: 30px;
+    color: #333;
+    font-weight: bold; /* Menambahkan ketebalan pada h2 */
+}
+
+p {
+    font-size: 14px; /* Memperbesar ukuran font paragraf */
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.6; /* Menambahkan jarak antar baris pada paragraf */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    color: #666;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    background-color: #f0f8ff;
+}
+
+.button-group {
+    margin: 20px 0;
+}
+
+button {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    transform: translateY(-2px);
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.container {
+    position: relative;
+    /* Sesuaikan dengan padding, border, atau margin .container jika diperlukan */
+}
+
+.social-links {
+    position: absolute;
+    bottom: 0px; /* Sesuaikan dengan jarak dari bawah .container */
+    right: 20px; /* Sesuaikan dengan jarak dari kanan .container */
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    margin-left: 10px; /* Opsi: atur margin antar ikon sosial media */
+}
+
+.social-links img {
+    width: 35px; /* Sesuaikan ukuran ikon sesuai keinginan Anda */
+    height: 35px; /* Sesuaikan ukuran ikon sesuai keinginan Anda */
+    transition: transform 0.3s ease-in-out; /* Opsi: animasi ketika dihover */
+}
+
+.social-links img:hover {
+    transform: scale(1.2); /* Opsi: perbesar ikon saat dihover */
+}
+
+.social-text {
+    font-size: 12px; /* Ukuran teks sesuai kebutuhan */
+    margin-right: 5px; /* Sesuaikan margin dengan ikon sosial media */
+    position: absolute;
+    bottom: 50px; /* Sesuaikan dengan jarak dari bawah .container */
+    right: 0px; /* Sesuaikan dengan jarak dari kanan .container */
+    display: flex;
+    align-items: center;
+}
